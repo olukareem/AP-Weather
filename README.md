@@ -1,25 +1,161 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) SOFTWARE ENGINEERING IMMERSIVE
-Olu Kareem
-## Mini Algorithm Exercise
+# PROJECT 2 README <!-- omit in toc -->
 
-"Odds From Evens"
+- [Project Planning](#project-planning)
+  - [Overview](#overview)
+  - [Wireframes](#wireframes)
+  - [MVP](#mvp)
+    - [Goals](#goals)
+    - [Libraries](#libraries)
+    - [Data](#data)
+    - [Component Hierarchy](#component-hierarchy)
+    - [Component Breakdown](#component-breakdown)
+    - [Component Estimates](#component-estimates)
+    - [Helper Functions](#helper-functions)
+  - [Post-MVP](#post-mvp)
+- [Project Delivery](#project-delivery)
+  - [Code Showcase](#code-showcase)
+  - [Code Issues & Resolutions](#code-issues--resolutions)
 
-### Objectives
+## Project Planning
 
-- Create an algorithm which takes a given array of integers (arr) and separates the odds from the evens.
-- The output should be a new array which has all even integers (ordered from lowest to highest) followed by all odd integers (ordered from highest to lowest).
+> This section should be completed for your project pitch with instructors.
+>
+> To ensure correct Markdown, it's recommended that you copy and paste the raw template code. The content provided is example content ONLY. You must make changes to all sections as they relate to your own project.
 
-> i.e.:
-> input => `[0,1,2,3,4,5,6,7,8,9]`
-> output => `[0,2,4,6,8,9,7,5,3,1]`
+<br>
 
-### Getting Started
+### Overview
 
-- Fork and clone this repo.
-- Run `npm i` from within the repo.
-- Run `npm run test` or `npm test` to make sure the tests work. (They should fail.)
-- Get hacking on the problem and test when you think you've got it!
+**Project Title** 
+Apollo Weather
 
-### Notes
+**Project Description** Apollo weather is an app that displays weather.  A user will be able to search a city and render a 5 day forecast. It will include images for different weather conditions.
 
-Pull requests due by 11pm. Happy hacking!
+<br>
+
+### Wireframes
+
+> Use the Wireframes section to display desktop, tablet and mobile views.
+
+![Layout](./weatherWireframe.png)
+
+- App Layout
+
+
+<br>
+
+### MVP
+
+> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+
+_The **Apollo Weather** MVP_
+- Users will be able to search by city
+- Upon searching, different weather updates for each city will be rendered
+- A high and low forecast for the specific city will be displayed
+- Users will get weather based on location
+- Display will include temperature readings, weather icons and list the current weather status.
+
+<br>
+
+#### Goals
+
+- _Sucessfully create 5 components_
+- _Successfully choose and call working API_
+- _Create a clean, readable display._
+- _etc._
+
+<br>
+
+#### Libraries
+
+> Use this section to list all supporting libraries and their role in the project.
+
+|     Library      | Description                                |
+| :--------------: | :----------------------------------------- |
+|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+| " | _Lorem ipsum dolor sit amet, consectetur._ |
+| unix-timestamp | _Lorem ipsum dolor sit amet, consectetur._ |
+
+|   Axios   | _Lorem ipsum dolor sit amet, consectetur._ |
+
+<br>
+
+#### Data
+https://www.programmableweb.com/api/weather-channel
+https://openweathermap.org/appid
+> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
+
+|    API     | Quality Docs? | Website       | Sample Query                            |
+| :--------: | :-----------: | :------------ | :-------------------------------------- |
+| WeatherAPI |      yes      | _https://openweathermap.org/current_ | _/data/2.5/weather?q={city name}&appid={your api key}_ |
+
+```
+JSON data sample from your API goes here.
+```
+
+<br>
+
+#### Component Hierarchy
+
+> Use this section to define your React components and the data architecture of your app.
+
+```
+src
+|__ assets/
+      |__ data-tests
+      |__ fonts
+      |__ graphics
+      |__ images
+      |__ mockups
+|__ components/
+      |__ App.jsx
+      |__ Search.jsx
+      |__ Forecast.jsx
+      |__ Weather.jsx
+      |__ Date.jsx
+```
+
+<br>
+
+#### Component Breakdown
+
+> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+
+|  Component   |    Type    | State | Props | Description                                                      |
+| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|    App       | functional |   n   |   n   | _Initial file to implement the server._               |
+|  Search      | functional |   n   |   n   | _Search bar used to find specific cities._       |
+|   Forecast   |   class    |   y   |   n   | _A 5-day span of weather conditions._      |
+| Weather      | functional |   n   |   y   | _Display's current weather based on location_
+|    Date      | functional |   n   |   n   | _Displays current Date._ |
+
+<br>
+
+### Post-MVP
+
+- Adding more components
+- Rsponsive Background
+- Sunrise/Sunset information
+- Responsive Icons
+
+> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
+- _Storybook and Tests._
+
+<br>
+
+***
+
+## Project Delivery
+
+### Code Showcase
+
+> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
+```
+code snippet here
+```
+
+### Code Issues & Resolutions
+
+> Use this section to list of all major issues encountered and their resolution, if you'd like.
