@@ -12,21 +12,20 @@ const Weather = (props) => {
           {/* <p className="Currently">Right Now</p> */}
 
           <div className="conditionContainer">
-     
-            {/* <h4 className="py-1">{props.description}</h4> */}
-            <span className="flexboxTemp">
+            <div className="flexboxTemp">
               {props.temp_fahrenheit ? (
                 <h1 className="flexbox-tempNum">
-                  {props.temp_fahrenheit}<i className={`${props.f_icon}`} />
+                  {props.temp_fahrenheit}
+                  <i className={`${props.f_icon}`} />
                   {/* <p className="Currently">Right Now</p> */}
                 </h1>
               ) : null}
 
               {/** Display low/high/temp*/}
-             {/**celsius option*/}
+              {/**celsius option*/}
               {/* {lowhighTemp(props.temp_minC, props.temp_maxC)} */}
               {lowhighTemp(props.temp_minF, props.temp_maxF)}
-            </span>
+            </div>
             <div className="flexbox-icon-descrip">
               {/* <i className={`${props.weatherIcon}`}/> */}
               <i className={`${props.weatherIcon}`} />
@@ -50,26 +49,25 @@ const Weather = (props) => {
             ) : null}
           </div>
 
-<div className="SunIcon">
-          <div className="Sunny"></div>
-          <div class="icon sunny">
-            <div class="sun">
-              <div class="rays"></div>
+          <div className="SunIcon">
+            <div className="Sunny"></div>
+            <div class="icon sunny">
+              <div class="sun">
+                <div class="rays"></div>
+              </div>
             </div>
           </div>
-</div>
-
         </div>
-        
-      ) : <div className="SunIconHome"> 
-      <div className="Sunny"></div>
+      ) : (
+        <div className="SunIconHome">
+          <div className="Sunny"></div>
           <div className="icon sunny">
             <div className="sun">
               <div className="rays"></div>
             </div>
           </div>
-          </div>}
-
+        </div>
+      )}
     </div>
   );
 };
@@ -90,6 +88,5 @@ function lowhighTemp(low, high) {
     );
   }
 }
-
 
 export default Weather;

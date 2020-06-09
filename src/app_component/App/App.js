@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import "/Users/Olukara/General_Assembly/sei/unit_2/week_6/project-2-v-2/Apollo-Weather/ap-weather/node_modules/weather-underground-icons/dist/wu-icons-style.css";
-import "weather-icons/css/weather-icons.css";
+// import "/Users/Olukara/General_Assembly/sei/unit_2/week_6/Project_2/Apollo-Weather/ap-weather/node_modules/weather-underground-icons/dist/wu-icons-style.css";
+// import "./weather-icons/css/weather-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Weather from "../Weather/weather.component";
 import Form from "../Form/form.component";
