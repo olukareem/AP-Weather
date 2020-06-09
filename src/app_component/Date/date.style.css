@@ -1,0 +1,36 @@
+
+.flexbox-date-container {
+  /* font-size: 1.1rem; */
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  font-weight: 450;
+  display: grid;
+  grid-template-rows: 10px repeat(2, auto) 10px;
+  /* align-items: center!important; */
+  /* justify-content: center!important; */
+  
+
+}
+span.flexbox-date-container {
+  margin: 0;
+  margin-top: -25px;
+  font-size: 1.2rem;
+  width: 100%;
+  ;  padding: 0 .5rem !important;
+
+}
+.flexbox-Date{
+  /* font-style: italic; */
+  
+}
+
+.clockDisplay {
+float: right;
+  justify-content: right;
+  margin: 0;
+  margin-top: -25px;
+  font-size: 1.2rem;
+  width: 100%;
+  /* padding: 0 3rem; */
+}

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+}
+
+body {
+  padding:0;
+  max-width: 74.99875em;
+  min-width: 35.99875em;
+  max-height: 85.375em;
+  /* height: 1920px; */
+  display: flexbox;
+  align-items: center!important;
+  justify-content: center!important;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+.bckgrndNight {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("./assets/night.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  width:100%;
+  height: 100%;
+  height: max-content;
+  /* max-height: 180rem; */
+  /* min-height: 100vh; */
+  /* width: 100%; */
+  background-position: bottom;
+  position: absolute;
+  transform: 0.4 ease-out;
+  
+}
+
+.bckgrndDay {
+  /* Les routes sans fin   */
+
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("./assets/les-routes-sans-fin-s-W8bJ83aYQxU-unsplash.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  height: 100%;
+  position: absolute;
+  height: max-content;
+
+  /* min-height: 100vh; */
+  background-position: bottom;
+
+  transform: 0.4 ease-out;
+}
+
+
+.bckgrndDefault {
+  /* Les routes sans fin   */
+
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("./assets/simon-migaj-unsplash.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  /* min-height: 100vh; */
+  background-position: bottom;
+  height: max-content;
+
+  width:100%;
+  height: 100%;
+  transform: 0.4 ease-out;
+}
+
+.Content{
+  display: flexbox;
+  align-items: center!important;
+  justify-content: center!important;
+  flex-direction: column;
+}
