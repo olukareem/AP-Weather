@@ -18,10 +18,6 @@
 
 ## Project Planning
 
-> This section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, it's recommended that you copy and paste the raw template code. The content provided is example content ONLY. You must make changes to all sections as they relate to your own project.
-
 <br>
 
 ### Overview
@@ -35,18 +31,12 @@ Apollo Weather
 
 ### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
-
 ![Layout](./weatherWireframe.png)
-
-- App Layout
 
 
 <br>
 
 ### MVP
-
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 _The **Apollo Weather** MVP_
 - Users will be able to search by city
@@ -68,8 +58,6 @@ _The **Apollo Weather** MVP_
 
 #### Libraries
 
-> Use this section to list all supporting libraries and their role in the project.
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
@@ -81,23 +69,62 @@ _The **Apollo Weather** MVP_
 <br>
 
 #### Data
-https://www.programmableweb.com/api/weather-channel
 https://openweathermap.org/appid
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
+http://api.timezonedb.com/v2.1/get-time-zone?key=${timeZone_api_key}&format=json&by=position&lat=${latitude}&lng=${longitude}`
+
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
 | WeatherAPI |      yes      | _https://openweathermap.org/current_ | _/data/2.5/weather?q={city name}&appid={your api key}_ |
+| TimezoneDb |      yes      | _http://api.timezonedb.com/v2.1/get-time-zone?key=${timeZone_api_key}&format=json&by=position&lat=${latitude}&lng=${longitude}_ |
 
 ```
-JSON data sample from your API goes here.
-```
+{
+  "coord": {"lon": -122.08,"lat": 37.39},
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 282.55,
+    "feels_like": 281.86,
+    "temp_min": 280.37,
+    "temp_max": 284.26,
+    "pressure": 1023,
+    "humidity": 100
+  },
+  "visibility": 16093,
+  "wind": {
+    "speed": 1.5,
+    "deg": 350
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1560350645,
+  "sys": {
+    "type": 1,
+    "id": 5122,
+    "message": 0.0139,
+    "country": "US",
+    "sunrise": 1560343627,
+    "sunset": 1560396563
+  },
+  "timezone": -25200,
+  "id": 420006353,
+  "name": "Mountain View",
+  "cod": 200
+}```
 
 <br>
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
@@ -119,29 +146,26 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
 |  Component   |    Type    | State | Props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    App       | functional |   n   |   n   | _Initial file to implement the server._               |
-|  Search      | functional |   n   |   n   | _Search bar used to find specific cities._       |
-|   Forecast   |   class    |   y   |   n   | _A 5-day span of weather conditions._      |
-| Weather      | functional |   n   |   y   | _Display's current weather based on location_
-|    Date      | functional |   n   |   n   | _Displays current Date._ |
+|    App       | class |   y   |   n   | _Initial file to implement the server._               |
+|  Search      | function |   n   |   y   | _Search bar used to find specific cities._       |
+|   Forecast   |   function    |   n   |   y   | _A 5-day span of weather conditions._      |
+| Weather      | function |   n   |   y   | _Display's current weather based on location_
+|    Date      | function |   n   |   y   | _Displays current Date and Time_ |
 
 <br>
 
 ### Post-MVP
 
 - Adding more components
-- Rsponsive Background
+- Responsive Background
 - Sunrise/Sunset information
 - Responsive Icons
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
 - _Storybook and Tests._
 
+ - None
 <br>
 
 ***
@@ -149,12 +173,19 @@ src
 ## Project Delivery
 
 ### Code Showcase
+This is a ternary that allowed my to change my background depending on the time day. It would save background style changes to different div classes within the Body.
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ```
-code snippet here
-```
+ <div 
+        className={
+          typeof this.state.city != "undefined"
+            ? this.state.switch.slice(2) == "d"
+              ? "bckgrndDay"
+              : "bckgrndNight"
+            : "bckgrndDefault"
+        }
+      ></div>```
 
 ### Code Issues & Resolutions
 
