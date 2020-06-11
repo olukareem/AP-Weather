@@ -1,0 +1,52 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/manifestinteractive/weather-underground-icons.git",
+      "/Users/Olukara/General_Assembly/sei/unit_2/week_6/project-2-v-2/Apollo-Weather/ap-weather"
+    ]
+  ],
+  "_from": "git+https://github.com/manifestinteractive/weather-underground-icons.git",
+  "_id": "weather-underground-icons@git+https://github.com/manifestinteractive/weather-underground-icons.git#74b423eaab87233a88f413cae822fd1cedebf919",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/weather-underground-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/manifestinteractive/weather-underground-icons.git",
+    "rawSpec": "git+https://github.com/manifestinteractive/weather-underground-icons.git",
+    "saveSpec": "git+https://github.com/manifestinteractive/weather-underground-icons.git",
+    "fetchSpec": "https://github.com/manifestinteractive/weather-underground-icons.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/manifestinteractive/weather-underground-icons.git#74b423eaab87233a88f413cae822fd1cedebf919",
+  "_spec": "git+https://github.com/manifestinteractive/weather-underground-icons.git",
+  "_where": "/Users/Olukara/General_Assembly/sei/unit_2/week_6/project-2-v-2/Apollo-Weather/ap-weather",
+  "authors": [
+    "Ashley Jager",
+    "Peter Schmalfeldt"
+  ],
+  "bugs": {
+    "url": "https://github.com/manifestinteractive/weather-underground-icons/issues"
+  },
+  "description": "Weather Underground Icons",
+  "homepage": "https://github.com/manifestinteractive/weather-underground-icons",
+  "keywords": [
+    "weather underground",
+    "weather",
+    "icons",
+    "png",
+    "svg"
+  ],
+  "license": "(MIT OR GPL-3.0)",
+  "main": "dist/wu-icons-style.css",
+  "name": "weather-underground-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manifestinteractive/weather-underground-icons.git"
+  },
+  "version": "1.0.1"
+}

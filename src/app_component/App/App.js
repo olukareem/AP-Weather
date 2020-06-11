@@ -8,6 +8,7 @@ import Weather from "../Weather/weather.component";
 import Form from "../Form/form.component";
 import DateTime from "../Date/date.component";
 import Title from "../Title/title.component";
+import AddWeather from '../AdditionalWeather/AddWeather.component';
 
 
 //api.openweathermap.org/data/2.5/weather?q={city name}
@@ -371,7 +372,15 @@ export default class App extends Component {
           night_icon={this.state.night_icon}
           day_icon={this.state.day_icon}
         />
-        
+        <AddWeather
+          city={this.state.city}
+          sunrise={this.state.sunrise}
+          sunset={this.state.sunset}
+          c_icon={this.state.c_icon}
+          f_icon={this.state.f_icon}
+          night_icon={this.state.night_icon}
+          day_icon={this.state.day_icon}
+                  />
       </div>
     );
   }

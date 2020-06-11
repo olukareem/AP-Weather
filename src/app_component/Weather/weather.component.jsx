@@ -1,6 +1,12 @@
 import React from "react";
 import "./weather.style.css";
 import "./animated.style.css";
+import "./weather-icons-master 2/css/weather-icons.css"
+import "./weather-icons-master 2/css/weather-icons.css";
+import "./weather-icons-master 2/css/weather-icons.min.css";
+import "./weather-icons-master 2/css/weather-icons-wind.css";
+import "./weather-icons-master 2/css/weather-icons-wind.min.css";
+import "./weather-underground-icons/dist/wu-icons-style.css";
 
 const Weather = (props) => {
   return (
@@ -33,7 +39,7 @@ const Weather = (props) => {
             </div>
           </div>
           <br></br>
-          <div className="SunriseSunset">
+          {/* <div className="SunriseSunset">
             {props.sunrise ? (
               <h4 className="sunrise">
                 Sunrise: {props.sunrise}
@@ -47,16 +53,16 @@ const Weather = (props) => {
                 <i className={`wu wu-white wu-32 wu-${props.night_icon}`} />
               </h4>
             ) : null}
-          </div>
+          </div> */}
 
-          <div className="SunIcon">
+          {/* <div className="SunIcon">
             <div className="Sunny"></div>
             <div class="icon sunny">
               <div class="sun">
                 <div class="rays"></div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       ) : (
         <div className="SunIconHome">
