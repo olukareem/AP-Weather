@@ -37,7 +37,7 @@ const Weather = (props) => {
             </div>
           </div>
         </div>
-      ) : (
+   ) : (
         <div className="SunIconHome">
           <div className="Sunny"></div>
           <div className="icon sunny">

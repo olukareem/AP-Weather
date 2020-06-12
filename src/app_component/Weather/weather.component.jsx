@@ -39,41 +39,10 @@ const Weather = (props) => {
             </div>
           </div>
           <br></br>
-          {/* <div className="SunriseSunset">
-            {props.sunrise ? (
-              <h4 className="sunrise">
-                Sunrise: {props.sunrise}
-                <i className={`wu wu-white wu-32 wu-${props.day_icon}`} />
-              </h4>
-            ) : null}
-
-            {props.sunset ? (
-              <h4 className="sunrise">
-                Sunset: {props.sunset}
-                <i className={`wu wu-white wu-32 wu-${props.night_icon}`} />
-              </h4>
-            ) : null}
-          </div> */}
-
-          {/* <div className="SunIcon">
-            <div className="Sunny"></div>
-            <div class="icon sunny">
-              <div class="sun">
-                <div class="rays"></div>
-              </div>
-            </div>
-          </div> */}
+         
         </div>
-      ) : (
-        <div className="SunIconHome">
-          <div className="Sunny"></div>
-          <div className="icon sunny">
-            <div className="sun">
-              <div className="rays"></div>
-            </div>
-          </div>
-        </div>
-      )}
+      ) : null
+      }
     </div>
   );
 };
