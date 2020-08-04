@@ -1,5 +1,4 @@
-# PROJECT 2 README <!-- omit in toc -->
-
+http://domineering-nut.surge.sh/
 - [Project Planning](#project-planning)
   - [Overview](#overview)
   - [Wireframes](#wireframes)
@@ -189,4 +188,4 @@ This is a ternary that allowed my to change my background depending on the time 
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+Properly giving the user's weather based on location.
