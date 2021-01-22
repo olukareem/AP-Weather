@@ -25,7 +25,7 @@ body {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.4)
     ),
-    url("./assets/night.jpg");
+    url("./assets/marek-piwnicki-k7cjQNzjkNg-unsplash.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -38,7 +38,7 @@ body {
   /* min-height: 100vh; */
   /* width: 100%; */
   /* background-position: bottom; */
-  position: absolute;
+  position: fixed;
   
   transform: 0.4 ease-out;
 }
@@ -51,7 +51,7 @@ body {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.4)
     ),
-    url("./assets/les-routes-sans-fin-s-W8bJ83aYQxU-unsplash.jpg");
+    url("./assets/niko-photos-tGTVxeOr_Rs-unsplash.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -59,7 +59,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   /* height: max-content; */
 
   /* height: max-content; */
@@ -74,13 +74,13 @@ body {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.4)
     ),
-    url("./assets/simon-migaj-unsplash.jpg");
+    url("./assets/simon-berger-twukN12EN7c-unsplash.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   /* height: max-content; */
   width: 100%;
   height: 100%;

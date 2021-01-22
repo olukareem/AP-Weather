@@ -24,7 +24,7 @@ http://domineering-nut.surge.sh/
 **Project Title** 
 Apollo Weather
 
-**Project Description** Apollo weather is an app that displays weather.  A user will be able to search a city and render a 5 day forecast. It will include images for different weather conditions.
+**Project Description** Apollo weather is an app that displays weather.  A user will be able to search a city and render the current weather. It will include images for different weather conditions.
 
 <br>
 

@@ -12,7 +12,7 @@ const Weather = (props) => {
   return (
     <div className="flexbox-container text-light">
       {props.city ? (
-        <div className="currentCity pt-4">
+        <div className="currentCity">
           {/* <span className="currentCondition"> */}
 
           {/* <p className="Currently">Right Now</p> */}

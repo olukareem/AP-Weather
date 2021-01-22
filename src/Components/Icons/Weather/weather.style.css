@@ -29,25 +29,39 @@
 
   /* float: right; */
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
 }
 
 .lowHigh {
   margin: 0rem;
   text-align: center;
   font-size: 2rem;
-  width: 15%;
+  padding: 2rem;
+  /* width: 15%; */
   text-shadow: 2px 1px rgba(50, 50, 70, 0.5);
 }
-span.lowHigh {
+/* span.lowHigh {
   padding: 0 2rem;
+} */
+
+span.lowText {
+    padding: 0 1rem;
+}
+span.highText {
+    padding: 0 1rem;
+}
+span.highdeg {
+    padding: 0 1rem;
+}
+span.lowdeg {
+    padding: 0 1rem;
 }
 
 .flexbox-icon-descrip {
   margin: 0rem;
   /* float: right; */
   padding: 0.5rem;
-  min-height: 17rem;
+  /* min-height: 17rem; */
   text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
 }
 

@@ -4,10 +4,10 @@ import "./App.css";
 // import "/Users/Olukara/General_Assembly/sei/unit_2/week_6/Project_2/Apollo-Weather/ap-weather/node_modules/weather-underground-icons/dist/wu-icons-style.css";
 // import "./weather-icons/css/weather-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Weather from "../Weather/weather.component";
-import Form from "../Form/form.component";
-import DateTime from "../Date/date.component";
-import Title from "../Title/title.component";
+import Weather from "../Icons/Weather/weather.component.jsx";
+import Form from "../Icons/Form/form.component.jsx";
+import DateTime from "..//Icons/Date/date.component.jsx";
+import Title from "../Icons/Title/title.component.jsx";
 import AddWeather from '../AdditionalWeather/AddWeather.component';
 
 
