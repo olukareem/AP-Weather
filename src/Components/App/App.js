@@ -273,12 +273,12 @@ export default class App extends Component {
     let API_Call;
     if (!latitude) {
       API_Call = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${this.state.citySearch},${this.state.countrySearch}&appid=${api_key}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${this.state.citySearch},${this.state.countrySearch}&appid=${api_key}`
       );
       // console.log(API_Call)
     } else {
       API_Call = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api_key}`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api_key}`
       );
     }
     const response = await API_Call.json();
@@ -320,7 +320,7 @@ export default class App extends Component {
  
   getTimeZone = async (latitude, longitude) => {
     const API_Call = await fetch(
-      `http://api.timezonedb.com/v2.1/get-time-zone?key=${timeZone_api_key}&format=json&by=position&lat=${latitude}&lng=${longitude}`
+      `https://api.timezonedb.com/v2.1/get-time-zone?key=${timeZone_api_key}&format=json&by=position&lat=${latitude}&lng=${longitude}`
     );
     const response = await API_Call.json();
     console.log(response);
