@@ -171,14 +171,14 @@ export default class App extends Component {
     let year = a.getFullYear();
     let month = months[a.getMonth()];
     let date = a.getDate();
-    let weekdays = new Array([
+    let weekdays = new Array(
       "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday"]
+      "Saturday"
     );
     const day = a.getDay();
     let realDay = weekdays[day];
