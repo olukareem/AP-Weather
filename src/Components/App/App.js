@@ -145,7 +145,7 @@ export default class App extends Component {
     let s = a.getSeconds();
     let ampm = hours >= 12 ? "PM" : "AM";
     hours = hours % 12;
-    hours = hours = hours != 0 ? hours : 12; // the hour '0' should be '12'
+    hours = hours = hours !== 0 ? hours : 12; // the hour '0' should be '12'
     minutes = ("0" + minutes).slice(-2);
     s = s < 10 ? "0" + s : s;
     const time = hours + ":" + minutes + ":" + s + " " + ampm;
@@ -171,14 +171,14 @@ export default class App extends Component {
     let year = a.getFullYear();
     let month = months[a.getMonth()];
     let date = a.getDate();
-    let weekdays = new Array(
+    let weekdays = new Array([
       "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday"
+      "Saturday"]
     );
     const day = a.getDay();
     let realDay = weekdays[day];
@@ -197,7 +197,7 @@ export default class App extends Component {
 
       let ampm = hours >= 12 ? "PM" : "AM";
       hours = hours % 12;
-      hours = hours = hours != 0 ? hours : 12; // the hour '0' should be '12'
+      hours = hours = hours !== 0 ? hours : 12; // the hour '0' should be '12'
       minutes = ("0" + minutes).slice(-2);
       s = s < 10 ? "0" + s : s;
       const time = hours + ":" + minutes + ":" + s + " " + ampm;
@@ -335,7 +335,7 @@ export default class App extends Component {
       <div 
         className={
           typeof this.state.city != "undefined"
-            ? this.state.switch.slice(2) == "d"
+            ? this.state.switch.slice(2) === "d"
               ? "bckgrndDay"
               : "bckgrndNight"
             : "bckgrndDefault"
